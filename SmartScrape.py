@@ -16,7 +16,7 @@ class Page(object):
 def get(page):
 	
 	#Perform some input validation
-	if ("http://" not in page):
+	if ("http://" not in page or "https://" not in page):
 		page = "http://" + page
 
 	#Get the page
